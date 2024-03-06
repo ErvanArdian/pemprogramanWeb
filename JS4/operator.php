@@ -51,9 +51,14 @@ $a *= $b;
 $a /= $b;
 $a %= $b;
 
+//kode untuk print
 echo "<br><br>";
 echo "Nilai a setelah ditambah dengan b: $a <br>";
 echo "Nilai a setelah dikurangi dengan b: $a <br>";
 echo "Nilai a setelah dikali dengan b: $a <br>";
 echo "Nilai a setelah dibagi dengan b: $a <br>";
 echo "Sisa pembagian a dengan b: $a <br>";
+
+$hasilIdentik = $a === $b;
+$hasilTidakIdentik = $a !== $b;
+
