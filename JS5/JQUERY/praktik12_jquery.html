@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styleCSS.css">
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".btn1").click(function () {
+                // Menambahkan kelas 'blue' ke elemen <hl>, <h2>, dan <p>
+                $("hl, h2, p").addClass("blue");
+                // Menambahkan kelas 'important' ke elemen <div>
+                $("div").addClass("important");
+            });
+            $(".btn2").click(function () {
+                // Menghapus kelas 'blue' dari elemen <hl>, <h2>, dan <p>
+                $("hl, h2, p").removeClass("blue");
+            });
+            $(".btn3").click(function () {
+                // Mengatur properti CSS 'background-color' dan 'font-size' untuk elemen <hl>, <h2>, <p>, dan <div>
+                $("hl, h2, p, div").css({ "background-color": "yellow", "font-size": "100%" });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Elemen <hl> -->
+    <hl>Heading 1</hl>
+    <!-- Elemen <h2> -->
+    <h2>Heading 2</h2>
+    <!-- Elemen <p> -->
+    <p>This is a paragraph .</p>
+    <!-- Elemen <p> -->
+    <p>This is another paragraph .</p>
+    <!-- Elemen <div> -->
+    <div>This is some important text !</div><br>
+
+    <!-- Tombol untuk menambahkan kelas -->
+    <button class="btn1">Add classes to elements</button>
+    <!-- Tombol untuk menghapus kelas -->
+    <button class="btn2">Remove classes to elements</button>
+    <!-- Tombol untuk mengatur properti CSS -->
+    <button class="btn3">Set classes to elements</button>
+</body>
+
+</html>

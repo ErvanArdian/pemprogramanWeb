@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                // Mengatur teks pada elemen dengan ID 'test1' menjadi "<b>Hello World</b>"
+                $("#test1").text("<b>Hello World</b>");
+            });
+            $("#btn2").click(function () {
+                // Mengatur HTML pada elemen dengan ID 'test2' menjadi "<b>Hello World !</b>"
+                $("#test2").html("<b>Hello World !</b>");
+            });
+            $("#btn3").click(function () {
+                // Mengatur nilai input dengan ID 'test3' menjadi "Polinema"
+                $("#test3").val("Polinema");
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <p id="test1">This is the first paragraph.</p>
+    <p id="test2">This is <b>another</b> paragraph.</p>
+    <p>Your Name: <input type="text" id="test3"></p>
+
+    <!-- Tombol untuk mendapatkan teks -->
+    <button id="btn1">Get Text</button>
+    <!-- Tombol untuk mendapatkan HTML -->
+    <button id="btn2">Get HTML</button>
+    <!-- Tombol untuk mendapatkan nilai input -->
+    <button id="btn3">Get Value</button>
+</body>
+
+</html>
