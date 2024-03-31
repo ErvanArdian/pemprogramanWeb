@@ -1,0 +1,60 @@
+.upload-form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    text-align: center; 
+}
+
+/* Gaya untuk judul */
+h2 {
+    margin: 0;
+    font-size: 24px; 
+    color: #333; 
+}
+
+/* Gaya untuk input file */
+.file-input {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 20px 0;
+}
+
+/* Gaya untuk input file yang sebenarnya */
+.file-input input[type="file"] {
+    display: none; 
+}
+
+/* Gaya untuk label file */
+.file-label {
+    background: #3498db; 
+    color: #fff; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+/* Gaya untuk tombol unggah */
+.upload-button {
+    background: #2ecc71;
+    color: #fff;
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    opacity: 0.5;
+}
+
+/* Gaya untuk tombol unggah yang dinonaktifkan */
+.upload-button:disabled {
+    background: #ccc; 
+    cursor: not-allowed;
+}
+
+/* Gaya untuk status unggahan */
+.upload-status {
+    margin-top: 20px; 
+    font-weight: bold; 
+}
