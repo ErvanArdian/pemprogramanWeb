@@ -19,7 +19,7 @@ if (isset($_FILES['file'])) {
     }
 
     // Memeriksa apakah ukuran file tidak melebihi batas maksimum
-    if ($file_size > 2097152) { // 2 MB (dalam byte)
+    if ($file_size > 2097152) { 
         $errors[] = 'Ukuran file tidak boleh lebih dari 2 MB';
     }
 
